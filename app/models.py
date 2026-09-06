@@ -1,8 +1,6 @@
-from asyncio.log import logger
-
 from groq import Groq
 from langchain_groq import ChatGroq
-  
+from .logger import logger  
  
 class GroqModel: 
     def __init__(self, key=None, model_name="openai/gpt-oss-safeguard-20b", temperature=0.0):
