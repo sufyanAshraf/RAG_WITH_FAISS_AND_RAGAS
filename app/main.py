@@ -8,6 +8,7 @@ from .embeddingsModel import EmbeddingsModel
 from .readData import readData
 from .embeddingsCreator import create_embeddings
 from .dataBase import dataBase
+from .queryModel import queryVectors
 
 def read_api_key_from_config() -> str:
     """Read the API key from the config.ini file."""
@@ -38,9 +39,9 @@ async def chat(request: chatRequest) -> chatResponse:
     # logger.info(f"Has embed_documents: {hasattr(embedder, 'embed_documents')}")
     # logger.info(f"Has embed_query: {hasattr(embedder, 'embed_query')}")
 
-    # # -------------------------
-    # # 4. Create FAISS vector store
-    # # -------------------------
+    # -------------------------
+    # 4. Create FAISS vector store
+    # -------------------------
     
     # vector_store = FAISS.from_documents(
     #     documents=docs,
@@ -98,6 +99,10 @@ async def chat(request: chatRequest) -> chatResponse:
     db = dataBase()
     index = db.store_vectors(vectors)
 
+    # query model
+    query = "best burger under 5 km"
+    result = queryVectors(query, embedder, index, embedding_records)
+    logger.info(result)
 
 
     response = {"message": "all ok"}
