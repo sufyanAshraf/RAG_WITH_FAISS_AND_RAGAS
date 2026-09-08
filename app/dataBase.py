@@ -4,7 +4,7 @@ import numpy as np
 from .logger import logger
 
 
-class DataBase:
+class dataBase:
     # _instance = None
 
     # def __new__(cls):

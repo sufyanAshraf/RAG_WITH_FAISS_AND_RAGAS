@@ -4,9 +4,10 @@ import configparser
 from .logger import logger  
 from .models import GroqModel
 from .embeddingsModel import EmbeddingsModel  
-from langchain_community.vectorstores import FAISS
+# from langchain_community.vectorstores import FAISS
 from .readData import readData
 from .embeddingsCreator import create_embeddings
+from .dataBase import dataBase
 
 def read_api_key_from_config() -> str:
     """Read the API key from the config.ini file."""
@@ -92,6 +93,10 @@ async def chat(request: chatRequest) -> chatResponse:
 
     # Create embeddings for the data
     embedding_records, vectors = create_embeddings(data, embedder)
+
+    # Store the vectors in the database
+    db = dataBase()
+    index = db.store_vectors(vectors)
 
 
 
