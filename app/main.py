@@ -9,6 +9,8 @@ from .readData import readData
 from .embeddingsCreator import create_embeddings
 from .dataBase import dataBase
 from .queryModel import queryVectors
+from .evalDataPrepration import create_evaluation_dataset
+from .eval import evaluateWithRagas 
 
 def read_api_key_from_config() -> str:
     """Read the API key from the config.ini file."""
@@ -103,6 +105,10 @@ async def chat(request: chatRequest) -> chatResponse:
     query = "best burger under 5 km"
     result = queryVectors(query, embedder, index, embedding_records)
     logger.info(result)
+
+    # run evals
+    EvalData = create_evaluation_dataset(embedder, index, model, embedding_records)
+    # result = evaluateWithRagas(EvalData, model, )
 
 
     response = {"message": "all ok"}

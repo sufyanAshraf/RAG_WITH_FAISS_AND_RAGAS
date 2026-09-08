@@ -9,7 +9,7 @@ from ragas.metrics import (
 )
 from ragas.run_config import RunConfig
 
-def evaluateWithRagas(evaluation_dataset, evaluator_llm, evaluator_embeddings):
+def evaluateWithRagas(evaluation_dataset, evaluator_llm):
     
 
     run_config = RunConfig(

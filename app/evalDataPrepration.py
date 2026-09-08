@@ -25,13 +25,10 @@ def generate(query, contexts, gen_llm):
     response = gen_llm.invoke(prompt)
     return response.content
 
-
+ 
 def create_evaluation_dataset(model, index, gen_llm, embedding_records, k=5): 
     ids, id_to_record = indexing(embedding_records)  
-
-    response = generate(query, contexts, gen_llm)
  
-
     dataset = []
 
     for item in eval_queries:
