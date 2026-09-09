@@ -66,6 +66,7 @@ async def chat(request: chatRequest) -> chatResponse:
 
     logger.info("Successfull query database")
 
+    # create prompt
     full_prompt =getPrompt(query=query, relevant_docs=result)
     
 
@@ -75,8 +76,9 @@ async def chat(request: chatRequest) -> chatResponse:
         
     response = model.invoke(
         full_prompt=full_prompt
-    )
-    logger.info(response) 
+    ) 
+    logger.info("Successfull response")
+    
 
     # # run evals
     # EvalData = create_evaluation_dataset(embedder, index, model, embedding_records)
@@ -87,10 +89,6 @@ async def chat(request: chatRequest) -> chatResponse:
     return chatResponse(response=response) 
 
 
-
-
-
- 
 @app.get("/health")
 def health_check() -> dict[str, str]: 
     """Health check endpoint to verify that the API is running.
@@ -99,3 +97,34 @@ def health_check() -> dict[str, str]:
     """
     logger.info("Health check requested")
     return {"status": "ok"}
+
+@app.get("/eval")
+def quality_test(): 
+    groq_api_key, huggingface_api_key = read_api_key_from_config()
+    
+    model = GroqModel(groq_api_key)
+    # docs = read_documents_from_file()
+    embeddings_model = EmbeddingsModel()
+    embedder = embeddings_model.get_model()  
+    
+    read_data = readData()
+    data = read_data.readjson()
+
+    # Create embeddings for the data
+    embedding_records, vectors = create_embeddings(data, embedder)
+
+    # Store the vectors in the database
+    db = dataBase()
+    index = db.store_vectors(vectors)
+    
+    # run evals
+    evaluation_dataset = create_evaluation_dataset(embedder, index, model, embedding_records)
+    result = evaluateWithRagas(evaluation_dataset, model, embedder)
+     
+    logger.info("successfull")
+    df = result.to_pandas()
+
+    data = df.to_dict(orient="records")
+
+    return {"data": data}
+ 
