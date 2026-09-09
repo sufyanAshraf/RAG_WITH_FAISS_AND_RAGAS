@@ -42,17 +42,22 @@ class EmbeddingsModel:
         zip_file_name = 'saved_embedding_model.zip'
         extraction_path = 'extracted_embedding_model'
 
-        # import zipfile
-        # import os
+        try: 
+            # Load the model from the extracted local path
+            loaded_model_from_zip = HuggingFaceEmbeddings(model_name=extraction_path)
+        except:
+            
+            import zipfile
+            import os
 
-        # # Create the extraction directory if it doesn't exist
-        # os.makedirs(extraction_path, exist_ok=True)
+            # Create the extraction directory if it doesn't exist
+            os.makedirs(extraction_path, exist_ok=True)
 
-        # # Unzip the file
-        # with zipfile.ZipFile(zip_file_name, 'r') as zip_ref:
-        #     zip_ref.extractall(extraction_path)
+            # Unzip the file
+            with zipfile.ZipFile(zip_file_name, 'r') as zip_ref:
+                zip_ref.extractall(extraction_path)
+                
+            loaded_model_from_zip = HuggingFaceEmbeddings(model_name=extraction_path)
 
-        # Load the model from the extracted local path
-        loaded_model_from_zip = HuggingFaceEmbeddings(model_name=extraction_path)
 
         return loaded_model_from_zip
