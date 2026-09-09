@@ -6,7 +6,7 @@ This is a learning and portfolio project designed to explore how local business 
 
 ## Demo
 
-<video src="demo.mp4" controls width="720"></video>
+<video src="[demo.mp4](https://github.com/sufyanAshraf/ingest_doc/blob/main/demo.mp4)" controls width="720"></video>
 
 ## What this project does
 
