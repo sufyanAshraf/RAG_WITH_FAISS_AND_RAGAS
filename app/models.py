@@ -37,12 +37,8 @@ class GroqModel:
         """
         return self.model_name
 
-
-    def eval_invoke(self, prompt):
-        response = self.llm.invoke(prompt)
-        return response.content
-    
-    def invoke_model(self, full_prompt, system_prompt = None, evalFlag = False ):
+ 
+    def invoke_model(self, full_prompt, system_prompt = None):
         """
         Invokes the model with the given messages.
         
@@ -59,10 +55,7 @@ class GroqModel:
         if not full_prompt:
             logger.error(f"Error occurred Full prompt is required : {e}")
             raise ValueError("Full prompt is required to invoke the model.")
-
-        if evalFlag:
-            return self.eval_invoke(full_prompt)
-        
+         
         try:
             response = self.llm.invoke([{"role": "system", "content": system_prompt}, {"role": "user", "content": full_prompt}])
             return response.content
