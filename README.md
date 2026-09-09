@@ -1,4 +1,4 @@
-# Personal Project — RAG Search API
+# RAG WITH FAISS AND RAGAS 
 
 A personal project focused on building a Retrieval-Augmented Generation (RAG) system with FastAPI, vector search, and language models.
 
@@ -8,10 +8,16 @@ This is a learning and portfolio project designed to explore how local business 
 
 - loads structured local data
 - converts records into embeddings
-- stores vectors in FAISS
+- stores vectors in FAISS 
+- metadata store saperately
 - retrieves relevant context with similarity search
 - generates a final response using Groq
-- includes a small evaluation workflow for testing quality
+- includes a evaluation workflow for testing quality
+- evaluation include:
+- Context Precision
+- Context recall
+- Faithfulness
+- Response Relevancy
 
 ## Tech stack
 
@@ -22,6 +28,7 @@ This is a learning and portfolio project designed to explore how local business 
 - LangChain
 - Groq
 - pytest
+- Ragas
 
 ## Project status
 
