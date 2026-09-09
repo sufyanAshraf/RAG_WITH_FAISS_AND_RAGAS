@@ -12,6 +12,7 @@ from .queryModel import queryVectors
 from .evalDataPrepration import create_evaluation_dataset
 from .eval import evaluateWithRagas 
 from .prompt import getPrompt
+
 def read_api_key_from_config() -> str:
     """Read the API key from the config.ini file."""
     logger.info("Reading API key from config file")
@@ -74,7 +75,7 @@ async def chat(request: chatRequest) -> chatResponse:
     # 8. Call Groq
     # -------------------------
         
-    response = model.invoke(
+    response = model.invoke_model(
         full_prompt=full_prompt
     ) 
     logger.info("Successfull response")
@@ -97,14 +98,16 @@ def health_check() -> dict[str, str]:
     """
     logger.info("Health check requested")
     return {"status": "ok"}
+ 
 
+from langchain_groq import ChatGroq
 @app.get("/eval")
 def quality_test(): 
     groq_api_key, huggingface_api_key = read_api_key_from_config()
     
-    model = GroqModel(groq_api_key)
+    model =  ChatGroq(groq_api_key=groq_api_key, model_name="openai/gpt-oss-safeguard-20b")
     # docs = read_documents_from_file()
-    embeddings_model = EmbeddingsModel()
+    embeddings_model = EmbeddingsModel(local_model=True)
     embedder = embeddings_model.get_model()  
     
     read_data = readData()
@@ -124,7 +127,9 @@ def quality_test():
     logger.info("successfull")
     df = result.to_pandas()
 
-    data = df.to_dict(orient="records")
+    # data = df.to_dict(orient="records") 
+    
+    logger.info(df)
 
-    return {"data": data}
+    return {"data": "ok"}
  

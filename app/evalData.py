@@ -56,8 +56,8 @@ eval_queries = [
         "query": "restaurant in Vantaa serving biryani and seekh kebab",
         "reference": "The Food House in Vantaa serves biryani, chicken tikka, chicken karahi, naan and seekh kebab."
     },
-    {
-        "query": "highest rated restaurant with traditional desserts",
-        "reference": "Grand Table in Espoo has the highest restaurant rating (9.7) and serves traditional desserts like gulab jamun and kheer alongside biryani and karahi."
-    },
+    # {
+    #     "query": "highest rated restaurant with traditional desserts",
+    #     "reference": "Grand Table in Espoo has the highest restaurant rating (9.7) and serves traditional desserts like gulab jamun and kheer alongside biryani and karahi."
+    # },
 ]

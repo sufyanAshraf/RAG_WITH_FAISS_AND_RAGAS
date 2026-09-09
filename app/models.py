@@ -42,7 +42,7 @@ class GroqModel:
         response = self.llm.invoke(prompt)
         return response.content
     
-    def invoke(self, full_prompt, system_prompt = None, evalFlag = False ):
+    def invoke_model(self, full_prompt, system_prompt = None, evalFlag = False ):
         """
         Invokes the model with the given messages.
         

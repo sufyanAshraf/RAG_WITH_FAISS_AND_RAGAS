@@ -586,3 +586,487 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
 2026-09-09 14:40:42,926 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-09-09 14:43:43,588 ERROR ragas.executor Exception raised in Job[0]: TimeoutError()
 2026-09-09 14:43:43,588 ERROR ragas.executor Exception raised in Job[1]: TimeoutError()
+2026-09-09 15:21:56,326 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:21:56,327 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:21:56,327 INFO faiss.loader Loading faiss.
+2026-09-09 15:21:56,351 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:22:24,063 INFO root Reading API key from config file
+2026-09-09 15:22:36,458 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 15:22:36,481 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 15:22:37,731 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 15:22:38,246 INFO root Vectors stored: 30
+2026-09-09 15:22:38,836 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:22:39,101 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:22:39,368 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:25:39,941 ERROR ragas.executor Exception raised in Job[0]: TimeoutError()
+2026-09-09 15:25:39,944 ERROR ragas.executor Exception raised in Job[1]: TimeoutError()
+2026-09-09 15:28:39,945 ERROR ragas.executor Exception raised in Job[2]: TimeoutError()
+2026-09-09 15:28:39,947 ERROR ragas.executor Exception raised in Job[3]: TimeoutError()
+2026-09-09 15:33:07,099 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:33:07,099 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:33:07,099 INFO faiss.loader Loading faiss.
+2026-09-09 15:33:07,123 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:33:34,635 INFO root Reading API key from config file
+2026-09-09 15:33:47,650 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 15:33:47,652 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 15:33:48,659 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 15:33:49,225 INFO root Vectors stored: 30
+2026-09-09 15:33:49,684 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:33:49,901 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:33:50,340 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:33:51,089 ERROR ragas.executor Exception raised in Job[0]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:33:51,824 ERROR ragas.executor Exception raised in Job[1]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:33:52,534 ERROR ragas.executor Exception raised in Job[2]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:33:52,906 ERROR ragas.executor Exception raised in Job[3]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:33:53,742 ERROR ragas.executor Exception raised in Job[4]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:33:54,367 ERROR ragas.executor Exception raised in Job[5]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:33:55,289 ERROR ragas.executor Exception raised in Job[6]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:33:55,459 ERROR ragas.executor Exception raised in Job[7]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:33:55,463 INFO root Evaluation completed successfully
+2026-09-09 15:36:32,727 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:36:32,728 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:36:32,728 INFO faiss.loader Loading faiss.
+2026-09-09 15:36:32,750 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:36:58,619 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:36:58,619 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:36:58,619 INFO faiss.loader Loading faiss.
+2026-09-09 15:36:58,643 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:38:33,347 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:38:33,348 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:38:33,348 INFO faiss.loader Loading faiss.
+2026-09-09 15:38:33,369 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:38:35,629 INFO root Reading API key from config file
+2026-09-09 15:38:47,471 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 15:38:47,472 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 15:38:48,488 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 15:38:48,990 INFO root Vectors stored: 30
+2026-09-09 15:38:49,296 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:38:49,604 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:38:49,901 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:40:05,180 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:40:05,180 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:40:05,181 INFO faiss.loader Loading faiss.
+2026-09-09 15:40:05,685 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:40:46,858 INFO root Reading API key from config file
+2026-09-09 15:41:47,029 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 15:41:47,040 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 15:42:00,097 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:42:00,098 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:42:00,098 INFO faiss.loader Loading faiss.
+2026-09-09 15:42:00,126 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:42:14,369 INFO root Reading API key from config file
+2026-09-09 15:42:26,285 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 15:42:26,286 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 15:42:27,211 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 15:42:28,087 INFO root Vectors stored: 30
+2026-09-09 15:42:28,544 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:42:28,818 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:42:29,062 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:42:39,695 ERROR ragas.executor Exception raised in Job[0]: TimeoutError()
+2026-09-09 15:42:39,695 ERROR ragas.executor Exception raised in Job[1]: TimeoutError()
+2026-09-09 15:42:49,701 ERROR ragas.executor Exception raised in Job[2]: TimeoutError()
+2026-09-09 15:42:49,701 ERROR ragas.executor Exception raised in Job[3]: TimeoutError()
+2026-09-09 15:42:59,707 ERROR ragas.executor Exception raised in Job[4]: TimeoutError()
+2026-09-09 15:42:59,708 ERROR ragas.executor Exception raised in Job[5]: TimeoutError()
+2026-09-09 15:43:09,718 ERROR ragas.executor Exception raised in Job[6]: TimeoutError()
+2026-09-09 15:43:09,718 ERROR ragas.executor Exception raised in Job[7]: TimeoutError()
+2026-09-09 15:43:19,725 ERROR ragas.executor Exception raised in Job[8]: TimeoutError()
+2026-09-09 15:43:19,726 ERROR ragas.executor Exception raised in Job[9]: TimeoutError()
+2026-09-09 15:43:29,733 ERROR ragas.executor Exception raised in Job[10]: TimeoutError()
+2026-09-09 15:43:29,735 ERROR ragas.executor Exception raised in Job[11]: TimeoutError()
+2026-09-09 15:43:30,354 INFO root successfull
+2026-09-09 15:45:35,694 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:45:35,694 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:45:35,694 INFO faiss.loader Loading faiss.
+2026-09-09 15:45:35,719 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:45:58,364 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:45:58,365 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:45:58,365 INFO faiss.loader Loading faiss.
+2026-09-09 15:45:58,389 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:46:06,750 INFO root Reading API key from config file
+2026-09-09 15:46:19,125 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 15:46:19,126 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 15:46:19,943 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 15:46:20,564 INFO root Vectors stored: 30
+2026-09-09 15:46:20,925 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:46:21,207 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:46:23,634 ERROR ragas.executor Exception raised in Job[1]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:46:24,218 ERROR ragas.executor Exception raised in Job[0]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:46:25,020 ERROR ragas.executor Exception raised in Job[2]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:46:25,199 ERROR ragas.executor Exception raised in Job[4]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:46:26,514 ERROR ragas.executor Exception raised in Job[3]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:46:26,554 ERROR ragas.executor Exception raised in Job[5]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:46:27,979 ERROR ragas.executor Exception raised in Job[6]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:46:28,783 ERROR ragas.executor Exception raised in Job[7]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:46:29,389 INFO root successfull
+2026-09-09 15:47:54,782 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:47:54,783 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:47:54,783 INFO faiss.loader Loading faiss.
+2026-09-09 15:47:54,809 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:49:47,755 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 15:49:47,755 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 15:49:47,756 INFO faiss.loader Loading faiss.
+2026-09-09 15:49:47,778 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 15:49:51,603 INFO root Reading API key from config file
+2026-09-09 15:50:16,406 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 15:50:16,409 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 15:50:18,565 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 15:50:20,914 INFO root Vectors stored: 30
+2026-09-09 15:50:21,359 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:50:21,734 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 15:50:23,762 ERROR ragas.executor Exception raised in Job[0]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:50:24,702 ERROR ragas.executor Exception raised in Job[1]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:50:25,283 ERROR ragas.executor Exception raised in Job[2]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:50:26,197 ERROR ragas.executor Exception raised in Job[3]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:50:26,830 ERROR ragas.executor Exception raised in Job[5]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:50:26,832 ERROR ragas.executor Exception raised in Job[4]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:50:27,792 ERROR ragas.executor Exception raised in Job[7]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:50:28,377 ERROR ragas.executor Exception raised in Job[6]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 15:50:28,971 INFO root successfull
+2026-09-09 15:50:29,107 INFO root                                           user_input                                 retrieved_contexts  ... faithfulness answer_relevancy
+0                cafe with coffee and chocolate cake  [Name: Café Delight, City: Helsinki Region: U...  ...          NaN              NaN
+1  restaurant in Vantaa serving biryani and seekh...  [Name: The Food House, City: Vantaa Region: Uu...  ...          NaN              NaN
+
+[2 rows x 8 columns]
+2026-09-09 16:04:13,027 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:04:13,028 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:04:13,029 INFO faiss.loader Loading faiss.
+2026-09-09 16:04:13,063 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:04:22,755 INFO root Reading API key from config file
+2026-09-09 16:04:36,799 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:04:36,800 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:04:37,720 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:04:38,389 INFO root Vectors stored: 30
+2026-09-09 16:05:08,195 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:05:08,196 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:05:08,196 INFO faiss.loader Loading faiss.
+2026-09-09 16:05:08,221 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:05:14,514 INFO root Reading API key from config file
+2026-09-09 16:05:26,034 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:05:26,035 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:05:26,850 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:05:27,782 INFO root Vectors stored: 30
+2026-09-09 16:05:28,182 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:05:28,440 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:05:30,467 ERROR ragas.executor Exception raised in Job[0]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:05:31,621 ERROR ragas.executor Exception raised in Job[2]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:05:31,934 ERROR ragas.executor Exception raised in Job[1]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:05:32,472 ERROR ragas.executor Exception raised in Job[3]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:05:32,822 ERROR ragas.executor Exception raised in Job[4]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:05:34,483 ERROR ragas.executor Exception raised in Job[6]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:05:35,239 ERROR ragas.executor Exception raised in Job[5]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:05:36,869 ERROR ragas.executor Exception raised in Job[7]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:05:37,499 INFO root successfull
+2026-09-09 16:05:37,524 INFO root                                           user_input                                 retrieved_contexts  ... faithfulness answer_relevancy
+0                cafe with coffee and chocolate cake  [Name: Café Delight, City: Helsinki Region: U...  ...          NaN              NaN
+1  restaurant in Vantaa serving biryani and seekh...  [Name: The Food House, City: Vantaa Region: Uu...  ...          NaN              NaN
+
+[2 rows x 8 columns]
+2026-09-09 16:07:27,638 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:07:27,639 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:07:27,640 INFO faiss.loader Loading faiss.
+2026-09-09 16:07:27,667 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:08:22,166 INFO root Reading API key from config file
+2026-09-09 16:08:33,215 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:08:33,217 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:08:34,347 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:08:34,890 INFO root Vectors stored: 30
+2026-09-09 16:08:35,172 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:08:35,413 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:16:11,848 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:16:11,848 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:16:11,849 INFO faiss.loader Loading faiss.
+2026-09-09 16:16:11,870 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:16:16,761 INFO root Reading API key from config file
+2026-09-09 16:16:27,843 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:16:27,844 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:16:28,781 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:16:29,316 INFO root Vectors stored: 30
+2026-09-09 16:17:46,684 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:17:46,684 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:17:46,685 INFO faiss.loader Loading faiss.
+2026-09-09 16:17:46,709 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:18:28,485 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:18:28,486 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:18:28,486 INFO faiss.loader Loading faiss.
+2026-09-09 16:18:28,507 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:18:34,925 INFO root Reading API key from config file
+2026-09-09 16:18:45,742 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:18:45,742 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:18:46,594 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:18:47,315 INFO root Vectors stored: 30
+2026-09-09 16:18:47,836 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:18:48,094 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:21:48,694 ERROR ragas.executor Exception raised in Job[0]: TimeoutError()
+2026-09-09 16:21:48,695 ERROR ragas.executor Exception raised in Job[1]: TimeoutError()
+2026-09-09 16:22:02,961 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:22:02,962 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:22:02,962 INFO faiss.loader Loading faiss.
+2026-09-09 16:22:02,995 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:22:09,630 INFO root Reading API key from config file
+2026-09-09 16:22:22,811 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:22:22,811 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:22:23,580 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:22:24,055 INFO root Vectors stored: 30
+2026-09-09 16:22:24,358 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:22:24,606 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:22:26,423 ERROR ragas.executor Exception raised in Job[0]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:22:26,711 ERROR ragas.executor Exception raised in Job[1]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:22:26,778 ERROR ragas.executor Exception raised in Job[2]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:22:29,071 ERROR ragas.executor Exception raised in Job[3]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:22:29,144 ERROR ragas.executor Exception raised in Job[4]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:22:31,079 ERROR ragas.executor Exception raised in Job[6]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:22:31,241 ERROR ragas.executor Exception raised in Job[5]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:22:33,627 ERROR ragas.executor Exception raised in Job[7]: AttributeError('GroqModel' object has no attribute 'agenerate_prompt')
+2026-09-09 16:22:34,255 INFO root successfull
+2026-09-09 16:22:34,271 INFO root                                           user_input                                 retrieved_contexts  ... faithfulness answer_relevancy
+0                cafe with coffee and chocolate cake  [Name: Café Delight, City: Helsinki Region: U...  ...          NaN              NaN
+1  restaurant in Vantaa serving biryani and seekh...  [Name: The Food House, City: Vantaa Region: Uu...  ...          NaN              NaN
+
+[2 rows x 8 columns]
+2026-09-09 16:26:30,902 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:26:30,903 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:26:30,903 INFO faiss.loader Loading faiss.
+2026-09-09 16:26:30,925 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:27:13,402 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:27:13,402 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:27:13,402 INFO faiss.loader Loading faiss.
+2026-09-09 16:27:13,431 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:27:18,661 INFO root Reading API key from config file
+2026-09-09 16:29:03,655 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:29:03,655 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:29:03,655 INFO faiss.loader Loading faiss.
+2026-09-09 16:29:03,679 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:29:24,073 INFO root Reading API key from config file
+2026-09-09 16:30:15,542 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:30:15,543 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:30:15,543 INFO faiss.loader Loading faiss.
+2026-09-09 16:30:15,567 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:30:52,212 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:30:52,213 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:30:52,213 INFO faiss.loader Loading faiss.
+2026-09-09 16:30:52,236 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:30:56,675 INFO root Reading API key from config file
+2026-09-09 16:31:07,901 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:31:07,902 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:31:08,795 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:31:09,853 INFO root Vectors stored: 30
+2026-09-09 16:31:10,276 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:10,576 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:11,659 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:11,967 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:11,968 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:12,297 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:12,477 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:12,554 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:12,555 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-09-09 16:31:12,601 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:12,990 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:13,402 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:13,812 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:13,890 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:13,891 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-09-09 16:31:16,266 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:16,955 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:16,956 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-09-09 16:31:19,632 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:19,635 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-09-09 16:31:20,294 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:20,371 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:20,372 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-09-09 16:31:21,711 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:22,586 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:22,587 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-09-09 16:31:23,815 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:23,893 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:23,894 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-09-09 16:31:25,659 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:25,660 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-09-09 16:31:28,349 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:29,038 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:29,039 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-09-09 16:31:29,731 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:31,189 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:31,190 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-09-09 16:31:34,110 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:34,111 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-09-09 16:31:34,808 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:31:35,441 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:35,456 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:31:35,458 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-09-09 16:32:31,661 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:32:31,661 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:32:31,662 INFO faiss.loader Loading faiss.
+2026-09-09 16:32:31,682 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:32:59,907 INFO root Reading API key from config file
+2026-09-09 16:33:10,944 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:33:10,945 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:33:11,890 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:33:12,341 INFO root Vectors stored: 30
+2026-09-09 16:33:12,603 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:12,821 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:13,825 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:13,982 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:14,109 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:14,440 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:14,540 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:14,728 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:14,981 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:15,070 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:15,392 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:15,462 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:15,744 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:16,076 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:16,077 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:16,589 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:16,590 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:16,693 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:33:16,694 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-09-09 16:33:17,406 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:17,824 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:22,778 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:33:22,779 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-09-09 16:33:24,164 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:33:24,790 INFO root successfull
+2026-09-09 16:33:24,806 INFO root                                           user_input                                 retrieved_contexts  ... faithfulness answer_relevancy
+0                cafe with coffee and chocolate cake  [Name: Café Delight, City: Helsinki Region: U...  ...          1.0         0.581190
+1  restaurant in Vantaa serving biryani and seekh...  [Name: The Food House, City: Vantaa Region: Uu...  ...          1.0         0.663765
+
+[2 rows x 8 columns]
+2026-09-09 16:36:52,141 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:36:52,142 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:36:52,142 INFO faiss.loader Loading faiss.
+2026-09-09 16:36:52,166 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:37:03,328 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:37:03,328 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:37:03,329 INFO faiss.loader Loading faiss.
+2026-09-09 16:37:03,347 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:37:33,601 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:37:33,601 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:37:33,602 INFO faiss.loader Loading faiss.
+2026-09-09 16:37:33,626 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:38:34,981 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:38:34,981 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:38:34,981 INFO faiss.loader Loading faiss.
+2026-09-09 16:38:35,004 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:38:43,799 INFO root Reading API key from config file
+2026-09-09 16:38:54,754 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:38:54,755 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:38:55,643 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:38:56,196 INFO root Vectors stored: 30
+2026-09-09 16:38:56,540 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:38:56,766 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:39:37,663 INFO root Reading API key from config file
+2026-09-09 16:39:38,216 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:39:38,218 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:39:38,848 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:39:39,579 INFO root Vectors stored: 30
+2026-09-09 16:39:39,828 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:39:40,047 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:40:32,233 INFO root Reading API key from config file
+2026-09-09 16:40:32,786 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:40:33,135 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:33,136 WARNING huggingface_hub.utils._http Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-09 16:40:33,182 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:33,631 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:33,684 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:33,696 INFO sentence_transformers.base.model Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-09-09 16:40:33,954 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:33,998 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:34,259 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:34,306 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2FREADME.md=&etag=%2244af2e3b0fa3a0b6239e48422972bf755f28fde0%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:34,589 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:34,635 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:34,917 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:34,969 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%2259d594003bf59880a884c574bf88ef7555bb0202%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:35,269 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-09 16:40:35,531 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:35,578 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig.json=&etag=%2272b987fd805cfa2b58c4c8c952b274a11bfd5a00%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:35,986 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-09 16:40:36,243 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-09 16:40:36,542 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-09 16:40:36,908 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-09 16:40:37,167 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:37,212 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22c79f2b6a0cea6f4b564fed1938984bace9d30ff0%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:37,487 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:37,533 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig.json=&etag=%2272b987fd805cfa2b58c4c8c952b274a11bfd5a00%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:37,830 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:37,879 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig.json=&etag=%2272b987fd805cfa2b58c4c8c952b274a11bfd5a00%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:38,184 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:38,233 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22c79f2b6a0cea6f4b564fed1938984bace9d30ff0%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:38,496 INFO httpx HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-09 16:40:38,861 INFO httpx HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-09 16:40:39,181 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-09 16:40:39,227 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%22d1514c3162bbe87b343f565fadc62e6c06f04f03%22 "HTTP/1.1 200 OK"
+2026-09-09 16:40:39,500 INFO httpx HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/2_Normalize/config.json "HTTP/1.1 404 Not Found"
+2026-09-09 16:40:39,763 INFO httpx HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-09-09 16:40:40,288 INFO root Vectors stored: 30
+2026-09-09 16:40:40,306 INFO root Successfull query database
+2026-09-09 16:40:40,815 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:40:40,817 INFO root Successfull response
+2026-09-09 16:42:56,547 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 16:42:56,548 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 16:42:56,548 INFO faiss.loader Loading faiss.
+2026-09-09 16:42:56,564 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 16:43:08,107 INFO root Reading API key from config file
+2026-09-09 16:43:15,891 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 16:43:15,892 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 16:43:16,593 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 16:43:17,050 INFO root Vectors stored: 30
+2026-09-09 16:43:17,344 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:17,567 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:18,440 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:18,679 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:18,709 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:19,014 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:19,092 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:19,381 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:19,632 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:19,639 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:19,901 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:19,967 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:20,245 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:20,462 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:20,573 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:20,910 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:20,978 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:21,059 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-09-09 16:43:21,059 INFO groq._base_client Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-09-09 16:43:21,527 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:21,853 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:24,360 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 16:43:24,931 INFO root successfull
+2026-09-09 16:43:24,941 INFO root                                           user_input                                 retrieved_contexts  ... faithfulness answer_relevancy
+0                cafe with coffee and chocolate cake  [Name: Café Delight, City: Helsinki Region: U...  ...          1.0         0.581190
+1  restaurant in Vantaa serving biryani and seekh...  [Name: The Food House, City: Vantaa Region: Uu...  ...          1.0         0.668534
+
+[2 rows x 8 columns]

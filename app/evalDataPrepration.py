@@ -23,9 +23,9 @@ def generate(query, contexts, gen_llm):
         "If the answer isn't in the context, say you don't know.\n\n"
         f"Context:\n{chr(10).join(contexts)}\n\nQuestion: {query}"
     )
-    response = gen_llm.invoke(prompt, evalFlag = True) 
+    response = gen_llm.invoke(prompt) 
      
-    return response 
+    return response.content
 
  
 def create_evaluation_dataset(model, index, gen_llm, embedding_records, k=5): 
