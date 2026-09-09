@@ -1,179 +1,70 @@
-# RAG Search API
+# Personal Project — RAG Search API
 
-A production-style Retrieval-Augmented Generation (RAG) application built with FastAPI, Groq, and Hugging Face embeddings. This project indexes local business data, retrieves relevant records via vector search, and generates grounded responses using an LLM.
+A personal project focused on building a Retrieval-Augmented Generation (RAG) system with FastAPI, vector search, and language models.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.13" />
-  <img src="https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/FAISS-Vector%20Search-4B0082?style=for-the-badge" alt="FAISS" />
-  <img src="https://img.shields.io/badge/Groq-LLM-FFD43B?style=for-the-badge" alt="Groq" />
-</p>
+This is a learning and portfolio project designed to explore how local business data can be indexed, retrieved, and used to generate grounded answers with an LLM.
 
-## Overview
-
-This project demonstrates a full RAG pipeline:
+## What this project does
 
 - loads structured local data
-- creates embeddings for each record
+- converts records into embeddings
 - stores vectors in FAISS
-- retrieves context using similarity search
-- generates a final answer using a Groq-hosted language model
-- includes an evaluation route for quality checks using Ragas
+- retrieves relevant context with similarity search
+- generates a final response using Groq
+- includes a small evaluation workflow for testing quality
 
-It is designed as a clean, portfolio-friendly backend project that can be extended for search, recommendation, customer support, and knowledge-base use cases.
+## Tech stack
 
-## Features
-
-- FastAPI backend with a clean API structure
-- FAISS-powered vector retrieval
-- Hugging Face embedding integration
-- Groq model generation for response synthesis
-- Local data ingestion for domain-specific knowledge
-- Evaluation endpoint for RAG quality testing
-- Easy local setup with a virtual environment
-
-## Project Structure
-
-```text
-ingest_doc/
-├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── models.py
-│   ├── embeddingsModel.py
-│   ├── embeddingsCreator.py
-│   ├── dataBase.py
-│   ├── queryModel.py
-│   ├── readData.py
-│   ├── eval.py
-│   ├── evalData.py
-│   ├── evalDataPrepration.py
-│   ├── logger.py
-│   └── prompt.py
-├── data/
-├── test/
-├── config.ini
-├── requirements.txt
-├── pyproject.toml
-├── README.md
-└── RAGENV/
-```
-
-## Tech Stack
-
-- Python 3.13
+- Python
 - FastAPI
 - FAISS
-- LangChain
 - Hugging Face Embeddings
-- Groq API
-- Ragas
+- LangChain
+- Groq
 - pytest
 
-## Setup
+## Project status
 
-### 1. Clone the repository
+This project is for personal learning, experimentation, and portfolio demonstration. It is not intended as a public product or reusable service for general external use.
 
-```bash
-git clone https://github.com/your-username/ingest_doc.git
-cd ingest_doc
-```
-
-### 2. Create and activate a virtual environment
+## Local setup
 
 ```powershell
+cd C:\Users\hp\work\ingest_doc
 python -m venv RAGENV
 .\RAGENV\Scripts\Activate.ps1
-```
-
-### 3. Install dependencies
-
-```powershell
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Configure environment variables
-
-Update your `config.ini` file with the required API keys.
-
-Example:
-
-```ini
-[KEYS]
-groq_api_key = YOUR_GROQ_KEY
-huggingface_api_key = YOUR_HUGGINGFACE_KEY
-```
-
-> Keep your API keys private and do not commit them to source control.
-
-## Run the Application
+## Run locally
 
 ```powershell
-python -m uvicorn app.main:app --reload
+cd C:\Users\hp\work\ingest_doc
+.\RAGENV\Scripts\python.exe -m uvicorn app.main:app --reload
 ```
 
-Then open:
+Open:
 
-- http://127.0.0.1:8000
 - http://127.0.0.1:8000/docs
 
-## API Endpoints
+## Notes
 
-### POST /
-Send a query and receive a grounded LLM response.
+- API keys are kept in local config files only.
+- This is a personal experimentation project.
+- Do not expose this project or its data publicly without review.
 
-Request body:
+## Purpose
 
-```json
-{
-  "query": "best restaurant near me"
-}
-```
+The goal is to practice:
 
-Response:
-
-```json
-{
-  "response": "Based on the indexed data, the best option is..."
-}
-```
-
-### GET /health
-Checks whether the API is running.
-
-### GET /eval
-Runs a lightweight evaluation of the retrieval and answer quality using Ragas.
-
-## Example Use Case
-
-This project is ideal for:
-
-- restaurant or business search assistants
-- domain-specific knowledge bots
-- local recommendation systems
-- internal document retrieval tools
-- learning RAG architecture in practice
-
-## Testing
-
-```powershell
-pytest -q
-```
-
-## Roadmap
-
-- improve prompt engineering
-- add async processing for large workloads
-- implement database-backed vector persistence
-- add authentication and rate limiting
-- expand support for more document sources
+- RAG pipeline design
+- embedding-based retrieval
+- prompt construction
+- LLM integration
+- evaluation and experimentation
 
 ## License
 
-This project is available for learning and portfolio use. You can adapt it for your own projects.
+For personal use and portfolio demonstration only.
 
-## Author
-
-Built as a practical RAG application demonstrating real retrieval, generation, and evaluation workflows.
- 
