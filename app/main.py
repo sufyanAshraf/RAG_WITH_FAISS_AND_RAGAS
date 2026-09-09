@@ -35,7 +35,7 @@ async def chat(request: chatRequest) -> chatResponse:
 
     model = GroqModel(groq_api_key)
     # docs = read_documents_from_file()
-    embeddings_model = EmbeddingsModel()
+    embeddings_model = EmbeddingsModel(local_model=True)
     embedder = embeddings_model.get_model()  
 
     # logger.info(f"Embedder type: {type(embedder)}")
