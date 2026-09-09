@@ -4,6 +4,10 @@ A personal project focused on building a Retrieval-Augmented Generation (RAG) sy
 
 This is a learning and portfolio project designed to explore how local business data can be indexed, retrieved, and used to generate grounded answers with an LLM.
 
+## Demo
+
+<video src="demo.mp4" controls width="720"></video>
+
 ## What this project does
 
 - loads structured local data
