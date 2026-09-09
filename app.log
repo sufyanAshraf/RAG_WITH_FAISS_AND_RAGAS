@@ -1140,3 +1140,24 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
 2026-09-09 17:20:16,570 INFO root Successfull query database
 2026-09-09 17:20:16,993 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-09-09 17:20:16,995 INFO root Successfull response
+2026-09-09 17:38:30,494 INFO faiss.loader Loading faiss with AVX2 support.
+2026-09-09 17:38:30,495 INFO faiss.loader Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-09-09 17:38:30,495 INFO faiss.loader Loading faiss.
+2026-09-09 17:38:31,011 INFO faiss.loader Successfully loaded faiss.
+2026-09-09 17:41:31,734 INFO root Reading API key from config file
+2026-09-09 17:41:41,978 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 17:41:41,978 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 17:41:42,672 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 17:41:43,126 INFO root Vectors stored: 30
+2026-09-09 17:41:43,137 INFO root Successfull query database
+2026-09-09 17:41:43,570 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 17:41:43,582 INFO root Successfull response
+2026-09-09 17:43:30,284 INFO root Reading API key from config file
+2026-09-09 17:43:30,968 INFO sentence_transformers.base.model No device provided, using cpu
+2026-09-09 17:43:30,969 INFO sentence_transformers.base.model Loading SentenceTransformer model from extracted_embedding_model.
+2026-09-09 17:43:31,433 INFO httpx HTTP Request: GET https://huggingface.co/api/models/extracted_embedding_model "HTTP/1.1 401 Unauthorized"
+2026-09-09 17:43:31,951 INFO root Vectors stored: 30
+2026-09-09 17:43:31,964 INFO root Successfull query database
+2026-09-09 17:43:32,409 INFO httpx HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-09 17:43:32,410 INFO root Successfull response

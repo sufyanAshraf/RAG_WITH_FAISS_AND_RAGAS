@@ -20,7 +20,7 @@ def read_api_key_from_config() -> str:
     config.read("config.ini")
     return config.get("KEYS", "groq_api_key") , config.get("KEYS", "huggingface_api_key")
 
-app = FastAPI(title="Ingession API", version="0.1.0") 
+app = FastAPI(title="RAG API", version="0.1.0") 
 
 class chatRequest(BaseModel):
     query: str
