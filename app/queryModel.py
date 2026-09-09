@@ -1,6 +1,16 @@
 import numpy as np
 
+def search(query, vector_store):
+    relevant_docs = vector_store.similarity_search(
+        query,
+        k=3
+    )
+    return relevant_docs
+
+
 def queryVectors(query, model, index, embedding_records):
+
+    # db_result = search(query, index)
     
 
     query_embedding = model.embed_query(query)
@@ -21,3 +31,4 @@ def queryVectors(query, model, index, embedding_records):
  
         b.append(place)
     return b
+

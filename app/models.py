@@ -24,7 +24,7 @@ class GroqModel:
             raise ValueError("API key is required to initialize the model.")
 
         try:
-            return ChatGroq(groq_api_key=self.key, model_name=self.model_name, temperature=self.temperature)
+            return ChatGroq(groq_api_key=self.key, model_name=self.model_name)
         except Exception as e:
             logger.error(f"Error initializing ChatGroq: {e}")
             raise Exception(f"Failed to initialize ChatGroq: {e}")

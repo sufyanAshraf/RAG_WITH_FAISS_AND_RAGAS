@@ -9,8 +9,9 @@ from ragas.metrics import (
 )
 from ragas.run_config import RunConfig
 
-def evaluateWithRagas(evaluation_dataset, evaluator_llm):
-    
+def evaluateWithRagas(evaluation_dataset, gen_llm, embedder):
+    evaluator_llm = LangchainLLMWrapper(gen_llm)
+    evaluator_embeddings = LangchainEmbeddingsWrapper(embedder)
 
     run_config = RunConfig(
         timeout=180,       # give slow/throttled Groq calls more room

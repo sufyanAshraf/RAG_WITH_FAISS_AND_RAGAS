@@ -1,6 +1,7 @@
 import numpy as np
 from .evalData import eval_queries
 from ragas import EvaluationDataset
+from .logger import logger
 
 
 def indexing(embedding_records):
@@ -22,8 +23,9 @@ def generate(query, contexts, gen_llm):
         "If the answer isn't in the context, say you don't know.\n\n"
         f"Context:\n{chr(10).join(contexts)}\n\nQuestion: {query}"
     )
-    response = gen_llm.invoke(prompt)
-    return response.content
+    response = gen_llm.invoke(prompt) 
+     
+    return response 
 
  
 def create_evaluation_dataset(model, index, gen_llm, embedding_records, k=5): 

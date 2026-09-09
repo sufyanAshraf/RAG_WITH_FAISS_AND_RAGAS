@@ -11,7 +11,7 @@ from .dataBase import dataBase
 from .queryModel import queryVectors
 from .evalDataPrepration import create_evaluation_dataset
 from .eval import evaluateWithRagas 
-
+from .prompt import getPrompt
 def read_api_key_from_config() -> str:
     """Read the API key from the config.ini file."""
     logger.info("Reading API key from config file")
@@ -40,16 +40,7 @@ async def chat(request: chatRequest) -> chatResponse:
     # logger.info(f"Embedder type: {type(embedder)}")
     # logger.info(f"Has embed_documents: {hasattr(embedder, 'embed_documents')}")
     # logger.info(f"Has embed_query: {hasattr(embedder, 'embed_query')}")
-
-    # -------------------------
-    # 4. Create FAISS vector store
-    # -------------------------
-    
-    # vector_store = FAISS.from_documents(
-    #     documents=docs,
-    #     embedding=embedder, 
-    # )
-    # logger.info("FAISS vector store created successfully")
+ 
     # # -------------------------
     # # 5. Search relevant documents
     # # -------------------------
@@ -58,39 +49,7 @@ async def chat(request: chatRequest) -> chatResponse:
     #     k=3
     # )
 
-    # # -------------------------
-    # # 6. Build context
-    # # -------------------------
-    # context = "\n\n".join(
-    #     doc.page_content
-    #     for doc in relevant_docs
-    # )
-
-    # # -------------------------
-    # # 7. Create prompt
-    # # -------------------------
-    # full_prompt = f"""
-    #     You are a helpful AI assistant.
-
-    #     Answer the user's question using the provided context.
-
-    #     Context:
-    #     {context}
-
-    #     Question:
-    #     {request.query}
-
-    #     Answer:
-    # """
-
-    # # -------------------------
-    # # 8. Call Groq
-    # # -------------------------
-     
-    # response = model.invoke(
-    #     full_prompt=full_prompt
-    # )
- 
+    
     read_data = readData()
     data = read_data.readjson()
 
@@ -102,16 +61,29 @@ async def chat(request: chatRequest) -> chatResponse:
     index = db.store_vectors(vectors)
 
     # query model
-    query = "best burger under 5 km"
+    query = request.query
     result = queryVectors(query, embedder, index, embedding_records)
-    logger.info(result)
 
-    # run evals
-    EvalData = create_evaluation_dataset(embedder, index, model, embedding_records)
-    # result = evaluateWithRagas(EvalData, model, )
+    logger.info("Successfull query database")
 
+    full_prompt =getPrompt(query=query, relevant_docs=result)
+    
 
-    response = {"message": "all ok"}
+    # -------------------------
+    # 8. Call Groq
+    # -------------------------
+        
+    response = model.invoke(
+        full_prompt=full_prompt
+    )
+    logger.info(response) 
+
+    # # run evals
+    # EvalData = create_evaluation_dataset(embedder, index, model, embedding_records)
+    # result = evaluateWithRagas(EvalData, model, embedder)
+    # print(result.to_pandas)
+    # logger.info(result.to_pandas)
+ 
     return chatResponse(response=response) 
 
 

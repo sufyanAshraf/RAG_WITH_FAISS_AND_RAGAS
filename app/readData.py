@@ -6,7 +6,7 @@ class readData:
         self.data = None
 
     def readtxt(self, name):
-        with open(f'..\data\{name}', 'r') as f:
+        with open(f'data\{name}', 'r') as f:
             content = f.read()
 
         return content
@@ -20,7 +20,4 @@ class readData:
 
         return data
 
-    
-
-
-    
+     
