@@ -9,7 +9,7 @@ This is a learning and portfolio project designed to explore how local business 
 <video src="https://github.com/sufyanAshraf/ingest_doc/raw/refs/heads/main/demo.mp4" controls width="720"></video>
 
 [Open the demo video](https://github.com/sufyanAshraf/ingest_doc/raw/refs/heads/main/demo.mp4) if the embedded player is not supported.
-![Project Demo](assets/demo.gif)
+![Project Demo](https://github.com/sufyanAshraf/ingest_doc/raw/refs/heads/main/demo.gif)
 
 ## What this project does
 
